@@ -1,0 +1,16 @@
+<?php
+// Autoload 自动载入
+require '../vendor/autoload.php';
+// 路由设置
+require '../config/routes.php';
+
+use Illuminate\Database\Capsule\Manager as Capsule;
+
+error_log(__FILE__.__LINE__.var_export($capsule,true), 3, '/tmp/dd');
+exit;
+$capsule = new Capsule;
+error_log(__FILE__.__LINE__.var_export($capsule,true), 3, '/tmp/dd');
+$capsule->addConnection(require '../config/database.php');
+$capsule->bootEloquent();
+
+

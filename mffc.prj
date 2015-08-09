@@ -1,0 +1,653 @@
+
+mffc=/home/yankai/devspace/mffc {
+ bootstrap.php
+ composer.json
+ composer.lock
+ composer_mffc.conf
+ app=app {
+  controllers=controllers {
+   BaseController.php
+   HomeController.php
+  }
+  models=models {
+   Article.php
+  }
+  views=views {
+   home.php
+  }
+ }
+ config=config {
+  database.php
+  routes.php
+  mail.php
+ }
+ public=public {
+  index.php
+ }
+ vendor=vendor {
+  autoload.php
+  composer=composer {
+   ClassLoader.php
+   autoload_classmap.php
+   autoload_files.php
+   autoload_namespaces.php
+   autoload_psr4.php
+   autoload_real.php
+   installed.json
+  }
+  danielstjules=danielstjules {
+   stringy=stringy {
+    CHANGELOG.md
+    LICENSE.txt
+    README.md
+    composer.json
+    phpunit.xml.dist
+    src=src {
+     Create.php
+     StaticStringy.php
+     Stringy.php
+    }
+    tests=tests {
+     CommonTest.php
+     CreateTest.php
+     StaticStringyTest.php
+     StringyTest.php
+    }
+   }
+  }
+  doctrine=doctrine {
+   inflector=inflector {
+    LICENSE
+    README.md
+    composer.json
+    phpunit.xml.dist
+    lib=lib {
+     Doctrine=Doctrine {
+      Common=Common {
+       Inflector=Inflector {
+        Inflector.php
+       }
+      }
+     }
+    }
+    tests=tests {
+     Doctrine=Doctrine {
+      Tests=Tests {
+       DoctrineTestCase.php
+       TestInit.php
+       Common=Common {
+        Inflector=Inflector {
+         InflectorTest.php
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+  illuminate=illuminate {
+   container=container {
+    BindingResolutionException.php
+    Container.php
+    ContextualBindingBuilder.php
+    composer.json
+   }
+   contracts=contracts {
+    composer.json
+    Auth=Auth {
+     Authenticatable.php
+     CanResetPassword.php
+     Guard.php
+     PasswordBroker.php
+     Registrar.php
+     UserProvider.php
+    }
+    Broadcasting=Broadcasting {
+     Broadcaster.php
+     Factory.php
+     ShouldBroadcast.php
+     ShouldBroadcastNow.php
+    }
+    Bus=Bus {
+     Dispatcher.php
+     HandlerResolver.php
+     QueueingDispatcher.php
+     SelfHandling.php
+    }
+    Cache=Cache {
+     Factory.php
+     Repository.php
+     Store.php
+    }
+    Config=Config {
+     Repository.php
+    }
+    Console=Console {
+     Application.php
+     Kernel.php
+    }
+    Container=Container {
+     BindingResolutionException.php
+     Container.php
+     ContextualBindingBuilder.php
+    }
+    Cookie=Cookie {
+     Factory.php
+     QueueingFactory.php
+    }
+    Database=Database {
+     ModelIdentifier.php
+    }
+    Debug=Debug {
+     ExceptionHandler.php
+    }
+    Encryption=Encryption {
+     DecryptException.php
+     EncryptException.php
+     Encrypter.php
+    }
+    Events=Events {
+     Dispatcher.php
+    }
+    Filesystem=Filesystem {
+     Cloud.php
+     Factory.php
+     FileNotFoundException.php
+     Filesystem.php
+    }
+    Foundation=Foundation {
+     Application.php
+    }
+    Hashing=Hashing {
+     Hasher.php
+    }
+    Http=Http {
+     Kernel.php
+    }
+    Logging=Logging {
+     Log.php
+    }
+    Mail=Mail {
+     MailQueue.php
+     Mailer.php
+    }
+    Pagination=Pagination {
+     LengthAwarePaginator.php
+     Paginator.php
+     Presenter.php
+    }
+    Pipeline=Pipeline {
+     Hub.php
+     Pipeline.php
+    }
+    Queue=Queue {
+     EntityNotFoundException.php
+     EntityResolver.php
+     Factory.php
+     Job.php
+     Monitor.php
+     Queue.php
+     QueueableEntity.php
+     ShouldBeQueued.php
+     ShouldQueue.php
+    }
+    Redis=Redis {
+     Database.php
+    }
+    Routing=Routing {
+     Middleware.php
+     Registrar.php
+     ResponseFactory.php
+     TerminableMiddleware.php
+     UrlGenerator.php
+     UrlRoutable.php
+    }
+    Support=Support {
+     Arrayable.php
+     Htmlable.php
+     Jsonable.php
+     MessageBag.php
+     MessageProvider.php
+     Renderable.php
+    }
+    Validation=Validation {
+     Factory.php
+     UnauthorizedException.php
+     ValidatesWhenResolved.php
+     ValidationException.php
+     Validator.php
+    }
+    View=View {
+     Factory.php
+     View.php
+    }
+   }
+   database=database {
+    Connection.php
+    ConnectionInterface.php
+    ConnectionResolver.php
+    ConnectionResolverInterface.php
+    DatabaseManager.php
+    DatabaseServiceProvider.php
+    Grammar.php
+    MigrationServiceProvider.php
+    MySqlConnection.php
+    PostgresConnection.php
+    QueryException.php
+    README.md
+    SQLiteConnection.php
+    SeedServiceProvider.php
+    Seeder.php
+    SqlServerConnection.php
+    composer.json
+    Capsule=Capsule {
+     Manager.php
+    }
+    Connectors=Connectors {
+     ConnectionFactory.php
+     Connector.php
+     ConnectorInterface.php
+     MySqlConnector.php
+     PostgresConnector.php
+     SQLiteConnector.php
+     SqlServerConnector.php
+    }
+    Console=Console {
+     Migrations=Migrations {
+      BaseCommand.php
+      InstallCommand.php
+      MigrateCommand.php
+      MigrateMakeCommand.php
+      RefreshCommand.php
+      ResetCommand.php
+      RollbackCommand.php
+      StatusCommand.php
+     }
+     Seeds=Seeds {
+      SeedCommand.php
+      SeederMakeCommand.php
+      stubs=stubs {
+       seeder.stub
+      }
+     }
+    }
+    Eloquent=Eloquent {
+     Builder.php
+     Collection.php
+     Factory.php
+     FactoryBuilder.php
+     MassAssignmentException.php
+     Model.php
+     ModelNotFoundException.php
+     QueueEntityResolver.php
+     ScopeInterface.php
+     SoftDeletes.php
+     SoftDeletingScope.php
+     Relations=Relations {
+      BelongsTo.php
+      BelongsToMany.php
+      HasMany.php
+      HasManyThrough.php
+      HasOne.php
+      HasOneOrMany.php
+      MorphMany.php
+      MorphOne.php
+      MorphOneOrMany.php
+      MorphPivot.php
+      MorphTo.php
+      MorphToMany.php
+      Pivot.php
+      Relation.php
+     }
+    }
+    Migrations=Migrations {
+     DatabaseMigrationRepository.php
+     Migration.php
+     MigrationCreator.php
+     MigrationRepositoryInterface.php
+     Migrator.php
+     stubs=stubs {
+      blank.stub
+      create.stub
+      update.stub
+     }
+    }
+    Query=Query {
+     Builder.php
+     Expression.php
+     JoinClause.php
+     Grammars=Grammars {
+      Grammar.php
+      MySqlGrammar.php
+      PostgresGrammar.php
+      SQLiteGrammar.php
+      SqlServerGrammar.php
+     }
+     Processors=Processors {
+      MySqlProcessor.php
+      PostgresProcessor.php
+      Processor.php
+      SQLiteProcessor.php
+      SqlServerProcessor.php
+     }
+    }
+    Schema=Schema {
+     Blueprint.php
+     Builder.php
+     MySqlBuilder.php
+     Grammars=Grammars {
+      Grammar.php
+      MySqlGrammar.php
+      PostgresGrammar.php
+      SQLiteGrammar.php
+      SqlServerGrammar.php
+     }
+    }
+   }
+   support=support {
+    AggregateServiceProvider.php
+    Arr.php
+    ClassLoader.php
+    Collection.php
+    Fluent.php
+    HtmlString.php
+    Manager.php
+    MessageBag.php
+    NamespacedItemResolver.php
+    Pluralizer.php
+    ServiceProvider.php
+    Str.php
+    ViewErrorBag.php
+    composer.json
+    helpers.php
+    Debug=Debug {
+     Dumper.php
+     HtmlDumper.php
+    }
+    Facades=Facades {
+     App.php
+     Artisan.php
+     Auth.php
+     Blade.php
+     Bus.php
+     Cache.php
+     Config.php
+     Cookie.php
+     Crypt.php
+     DB.php
+     Event.php
+     Facade.php
+     File.php
+     Hash.php
+     Input.php
+     Lang.php
+     Log.php
+     Mail.php
+     Password.php
+     Queue.php
+     Redirect.php
+     Redis.php
+     Request.php
+     Response.php
+     Route.php
+     Schema.php
+     Session.php
+     Storage.php
+     URL.php
+     Validator.php
+     View.php
+    }
+    Traits=Traits {
+     CapsuleManagerTrait.php
+     Macroable.php
+    }
+   }
+  }
+  nesbot=nesbot {
+   carbon=carbon {
+    LICENSE
+    composer.json
+    readme.md
+    src=src {
+     Carbon=Carbon {
+      Carbon.php
+      CarbonInterval.php
+      Lang=Lang {
+       ar.php
+       az.php
+       bg.php
+       bn.php
+       ca.php
+       cs.php
+       da.php
+       de.php
+       el.php
+       en.php
+       eo.php
+       es.php
+       eu.php
+       fa.php
+       fi.php
+       fo.php
+       fr.php
+       he.php
+       hr.php
+       hu.php
+       id.php
+       it.php
+       ja.php
+       ko.php
+       lt.php
+       lv.php
+       ms.php
+       nl.php
+       no.php
+       pl.php
+       pt.php
+       pt_BR.php
+       ro.php
+       ru.php
+       sk.php
+       sl.php
+       sr.php
+       sv.php
+       th.php
+       tr.php
+       uk.php
+       uz.php
+       vi.php
+       zh-TW.php
+       zh.php
+      }
+     }
+    }
+   }
+  }
+  noahbuscher=noahbuscher {
+   macaw=macaw {
+    LICENSE
+    Macaw.php
+    README.md
+    Web.config
+    composer.json
+    nginx.conf
+   }
+  }
+  symfony=symfony {
+   translation=translation {
+    CHANGELOG.md
+    DataCollectorTranslator.php
+    IdentityTranslator.php
+    Interval.php
+    LICENSE
+    LoggingTranslator.php
+    MessageCatalogue.php
+    MessageCatalogueInterface.php
+    MessageSelector.php
+    MetadataAwareInterface.php
+    PluralizationRules.php
+    README.md
+    Translator.php
+    TranslatorBagInterface.php
+    TranslatorInterface.php
+    composer.json
+    phpunit.xml.dist
+    Catalogue=Catalogue {
+     AbstractOperation.php
+     DiffOperation.php
+     MergeOperation.php
+     OperationInterface.php
+    }
+    DataCollector=DataCollector {
+     TranslationDataCollector.php
+    }
+    Dumper=Dumper {
+     CsvFileDumper.php
+     DumperInterface.php
+     FileDumper.php
+     IcuResFileDumper.php
+     IniFileDumper.php
+     JsonFileDumper.php
+     MoFileDumper.php
+     PhpFileDumper.php
+     PoFileDumper.php
+     QtFileDumper.php
+     XliffFileDumper.php
+     YamlFileDumper.php
+    }
+    Exception=Exception {
+     ExceptionInterface.php
+     InvalidResourceException.php
+     NotFoundResourceException.php
+    }
+    Extractor=Extractor {
+     AbstractFileExtractor.php
+     ChainExtractor.php
+     ExtractorInterface.php
+    }
+    Loader=Loader {
+     ArrayLoader.php
+     CsvFileLoader.php
+     IcuDatFileLoader.php
+     IcuResFileLoader.php
+     IniFileLoader.php
+     JsonFileLoader.php
+     LoaderInterface.php
+     MoFileLoader.php
+     PhpFileLoader.php
+     PoFileLoader.php
+     QtFileLoader.php
+     XliffFileLoader.php
+     YamlFileLoader.php
+     schema=schema {
+      dic=dic {
+       xliff-core=xliff-core {
+        xliff-core-1.2-strict.xsd
+        xml.xsd
+       }
+      }
+     }
+    }
+    Tests=Tests {
+     DataCollectorTranslatorTest.php
+     IdentityTranslatorTest.php
+     IntervalTest.php
+     LoggingTranslatorTest.php
+     MessageCatalogueTest.php
+     MessageSelectorTest.php
+     PluralizationRulesTest.php
+     TranslatorCacheTest.php
+     TranslatorTest.php
+     Catalogue=Catalogue {
+      AbstractOperationTest.php
+      DiffOperationTest.php
+      MergeOperationTest.php
+     }
+     DataCollector=DataCollector {
+      TranslationDataCollectorTest.php
+     }
+     Dumper=Dumper {
+      CsvFileDumperTest.php
+      FileDumperTest.php
+      IcuResFileDumperTest.php
+      IniFileDumperTest.php
+      JsonFileDumperTest.php
+      MoFileDumperTest.php
+      PhpFileDumperTest.php
+      PoFileDumperTest.php
+      QtFileDumperTest.php
+      XliffFileDumperTest.php
+      YamlFileDumperTest.php
+     }
+     Loader=Loader {
+      CsvFileLoaderTest.php
+      IcuDatFileLoaderTest.php
+      IcuResFileLoaderTest.php
+      IniFileLoaderTest.php
+      JsonFileLoaderTest.php
+      LocalizedTestCase.php
+      MoFileLoaderTest.php
+      PhpFileLoaderTest.php
+      PoFileLoaderTest.php
+      QtFileLoaderTest.php
+      XliffFileLoaderTest.php
+      YamlFileLoaderTest.php
+     }
+     fixtures=fixtures {
+      empty-translation.mo
+      empty-translation.po
+      empty.csv
+      empty.ini
+      empty.json
+      empty.mo
+      empty.po
+      empty.xlf
+      empty.yml
+      encoding.xlf
+      escaped-id-plurals.po
+      escaped-id.po
+      invalid-xml-resources.xlf
+      malformed.json
+      non-valid.xlf
+      non-valid.yml
+      plurals.mo
+      plurals.po
+      resname.xlf
+      resources-clean.xlf
+      resources.csv
+      resources.ini
+      resources.json
+      resources.mo
+      resources.php
+      resources.po
+      resources.ts
+      resources.xlf
+      resources.yml
+      valid.csv
+      withdoctype.xlf
+      withnote.xlf
+      resourcebundle=resourcebundle {
+       corrupted=corrupted {
+        resources.dat
+       }
+       dat=dat {
+        en.res
+        en.txt
+        fr.res
+        fr.txt
+        packagelist.txt
+        resources.dat
+       }
+       res=res {
+        en.res
+       }
+      }
+     }
+    }
+    Writer=Writer {
+     TranslationWriter.php
+    }
+   }
+  }
+ }
+}
