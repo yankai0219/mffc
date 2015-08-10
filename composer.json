@@ -14,14 +14,5 @@
             "app/models",
             "services"
         ]
-    },
-    "repositories": [
-        {
-            "packagist": false
-        },
-        {
-            "type": "composer",
-            "url": "http://comproxy.cn/repo/packagist"
-        }
-    ]
+    }
 }
