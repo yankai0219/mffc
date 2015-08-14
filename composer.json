@@ -1,5 +1,5 @@
 {
-    "name": "yankai0219/mffc",
+    "name": "",
     "require":{
         "noahbuscher/macaw": "dev-master",
         "illuminate/database": "*",
